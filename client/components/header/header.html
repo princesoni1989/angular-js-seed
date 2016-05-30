@@ -1,0 +1,22 @@
+<div class="navbar navbar-default navbar-static-top" ng-controller="HeaderCtrl as Header">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" ng-click="isCollapsed = !isCollapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Angular-Js-Seed</a>
+    </div>
+    <div collapse="isCollapsed" class="navbar-collapse collapse" id="navbar-main">
+
+      <ul class="nav navbar-nav navbar-right">
+        <li ng-hide="Header.isLoggedIn()" ui-sref-active="active"><a ui-sref="signUp">Sign up</a></li>
+        <li ng-hide="Header.isLoggedIn()" ui-sref-active="active"><a ui-sref="login">Login</a></li>
+        <li ng-show="Header.isLoggedIn()"><p class="navbar-text">Hello {{ Header.getCurrentUser().name }}</p> </li>
+        <li ng-show="Header.isLoggedIn()"><a ui-sref="logout">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
