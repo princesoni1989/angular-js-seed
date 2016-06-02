@@ -9,7 +9,19 @@ angular.module('angularJsSeedApp')
         url: '/home',
         templateUrl: 'app/home/home.html',
         controller: 'HomeCtrl',
-        controllerAs: 'Home'
+        controllerAs: 'Home',
+        authenticate: true,
+        resolve: {
+          LoggedInUser: function (Auth, $q) {
+            var deferred = $q.defer();
+            Auth.isLoggedInAsync(function (success) {
+              deferred.resolve();
+            }, function (error) {
+              return deferred.reject();
+            });
+            return deferred.promise;
+          }
+        }
       })
   });
 

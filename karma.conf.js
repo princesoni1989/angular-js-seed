@@ -34,6 +34,13 @@ module.exports = function(config) {
       '**/*.html': 'html2js'
     },
 
+      plugins: [
+        'karma-phantomjs-launcher',
+        'karma-jasmine',
+        'karma-junit-reporter',
+        'karma-coverage'
+      ],
+
     ngHtml2JsPreprocessor: {
       stripPrefix: 'client/'
     },
@@ -46,6 +53,12 @@ module.exports = function(config) {
 
     // list of files / patterns to exclude
     exclude: [],
+
+      reporters: ['progress', 'coverage'],
+      coverageReporter: {
+        type: 'html',
+        dir: 'coverage/'
+      },
 
     // web server port
     port: 8080,

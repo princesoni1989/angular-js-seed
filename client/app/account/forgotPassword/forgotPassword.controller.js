@@ -26,8 +26,9 @@
       if (form.$valid) {
         ForgotPassword.posting = true;
         ForgotPassword.requestFailed = false;
-        User.forgotPassword({email: ctrl.form.email}, function (data) {
+        User.forgotPassword({email: ForgotPassword.form.email}, function (data) {
           ForgotPassword.sent = true;
+          ForgotPassword.goToLogin();
         }, function (err) {
           ForgotPassword.posting = false;
           ForgotPassword.error = err.code;

@@ -15,7 +15,7 @@ angular.module('angularJsSeedApp')
         }
       },
       forgotPassword: {
-        method: 'GET',
+        method: 'POST',
         params: {
           id:'forgotPassword'
         }

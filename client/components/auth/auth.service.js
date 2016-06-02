@@ -2,9 +2,10 @@
 (function (angular) {
 
 
-  function Auth($location, $rootScope, $http, User, $cookieStore, $q) {
+  function Auth($location, $rootScope, $http, User, $cookieStore, $q, Config) {
     var currentUser = {};
-    if ($cookieStore.get('token')) {
+    var token = $cookieStore.get('token');
+    if (token) {
       currentUser = User.get();
     }
 
@@ -21,7 +22,7 @@
         var cb = callback || angular.noop;
         var deferred = $q.defer();
 
-        $http.post('/auth/local', {
+        $http.post(Config.getHost() + '/auth/local', {
           email: user.email,
           password: user.password
         }).

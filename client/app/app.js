@@ -31,6 +31,11 @@ angular.module('angularJsSeedApp', [
           event.preventDefault();
           $state.go('home');
         }
+
+        if (next.authenticate && !loggedIn) {
+          event.preventDefault();
+          $state.go('login');
+        }
       });
     });
   }]);

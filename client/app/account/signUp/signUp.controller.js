@@ -19,14 +19,10 @@
       SignUp.submitted = true;
 
       if (form.$valid) {
-        Auth.createUser({
-          name: $scope.user.name,
-          email: $scope.user.email,
-          password: $scope.user.password
-        })
+        Auth.createUser(SignUp.user)
           .then(function () {
             // Account created, redirect to home
-            $state.go('main');
+            $state.go('home');
           })
           .catch(function (err) {
             err = err.data;

@@ -7,20 +7,20 @@
   //configuration object
   function config() {
     var configuration =  {
-      ENV: 'PRODUCTION',
+      ENV: 'DEVELOPMENT',
 
       ENVIRONMENTS: {
 
         STAGING: {
-          URL: 'https://staging.com'
+          URL: 'http://localhost:9000'
         },
 
         PRODUCTION: {
-          URL: 'https://production.com'
+          URL: 'http://localhost:9000'
         },
 
         DEVELOPMENT: {
-          URL: 'https://development.com'
+          URL: 'https://frozen-tundra-93174.herokuapp.com'
         }
       },
 

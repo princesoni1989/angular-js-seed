@@ -10,6 +10,7 @@ var favicon = require('serve-favicon');
 var cluster = require('cluster');
 var http = require('http');
 var clusterCount = 1;
+var env;
 
 // Change FRONT-END PORT here
 var PORT = 9000;
@@ -20,8 +21,9 @@ var FolderName = '../' + 'client';
 /*Command line arguments
  * Command node app.js [PORT] [PUBLIC-DIR-PATH]*/
 if (process.argv.length > 1) {
-  PORT = (process.argv[2] && !isNaN(process.argv[2]) && +process.argv[2] ) || PORT;
-  FolderName = process.argv[3] || FolderName;
+  env = process.argv[2] || 'development'
+  PORT = (process.argv[3] && !isNaN(process.argv[3]) && +process.argv[3] ) || PORT;
+  FolderName = process.argv[4] || FolderName;
 }
 
 /**
@@ -51,6 +53,9 @@ if (cluster.isMaster) {
   var server = require('http').createServer(app);
 
   //app.use(favicon(path.join(__dirname, FolderName, 'favicon.ico')));
+  if (env === 'development') {
+    app.use(require('connect-livereload')());
+  }
   app.use(favicon(path.join(__dirname, FolderName, 'favicon.ico')));
   app.use(express.static(path.join(__dirname, '../.tmp')));
   app.use(express.static(path.join(__dirname, FolderName)));

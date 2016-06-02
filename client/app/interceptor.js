@@ -10,7 +10,7 @@
       request: function(config) {
         config.headers = config.headers || {};
         if ($cookies.get('token')) {
-          config.headers.Authorization = 'Bearer ' + $cookies.get('token');
+          config.headers.Authorization = 'Bearer ' + JSON.parse($cookies.get('token'));
         }
         return config;
       },

@@ -10,6 +10,9 @@
     "name": "Prince Soni",
     "email": "1989prince.soni@gmail.com"
   },
+  "scripts": {
+    "postinstall": "bower install"
+  },
   "devDependencies": {
     "grunt": "~0.4.4",
     "grunt-autoprefixer": "~0.7.2",
