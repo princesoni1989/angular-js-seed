@@ -83,9 +83,10 @@ This app comes with preconfigured configuration. You can find below listed funct
 
 
 ## Directory Layout
+![](https://cloud.githubusercontent.com/assets/10917279/15777703/09eba91e-29af-11e6-8bda-c7c3e93492cc.png)
 
-  <img src="(https://cloud.githubusercontent.com/assets/10917279/15777703/09eba91e-29af-11e6-8bda-c7c3e93492cc.png" width="650"/>
-  <img src="https://cloud.githubusercontent.com/assets/10917279/15777710/11128ad2-29af-11e6-8e66-c242d065e966.png" width="650"/>
+![](https://cloud.githubusercontent.com/assets/10917279/15777710/11128ad2-29af-11e6-8e66-c242d065e966.png)
+
 
 ## Testing
 
