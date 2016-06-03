@@ -83,9 +83,10 @@ This app comes with preconfigured configuration. You can find below listed funct
 
 
 ## Directory Layout
-![](screen133.png)
-
-![](screen233.png)
+<p align="center">
+  <img src="./client/assests/images/screen.png" width="350"/>
+  <img src="your_relative_path_here_number_2_large_name" width="350"/>
+</p>
 ## Testing
 
 There are two kinds of tests in the angular-seed application: Unit tests and End to End tests.
