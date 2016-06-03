@@ -23,7 +23,7 @@ module.exports = function(config) {
       'client/bower_components/angular-ui-router/release/angular-ui-router.js',
       'client/app/app.js',
       'client/app/**/*.js',
-      'client/test/account/login/*.js',
+      'client/test/**/*.js',
       'client/components/**/*.js',
       'client/app/**/*.html',
       'client/components/**/*.html'
@@ -53,12 +53,6 @@ module.exports = function(config) {
 
     // list of files / patterns to exclude
     exclude: [],
-
-      reporters: ['progress', 'coverage'],
-      coverageReporter: {
-        type: 'html',
-        dir: 'coverage/'
-      },
 
     // web server port
     port: 8080,
