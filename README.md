@@ -24,7 +24,7 @@ Clone the angular-seed repository using [git](https://git-scm.com/book/en/v2/Get
 
 ```
 git https://github.com/princesoni1989/angular-js-seed
-cd sngular-js-seed
+cd angular-js-seed
 ```
 
 ### Install Dependencies
