@@ -2,17 +2,17 @@
 
 This project is based on angular 1.x concept and wrap around  usefull utility for angular application development. 
 
-The seed contains a sample AngularJS application and is preconfigured to install the Angular
+The seed contains a sample AngularJS application and is pre-configured to install the Angular
 framework and a bunch of development and testing tools for instant web development.
 
 
 
 ## Getting Started
 
-You can clone repostiory [angular-js-seed](https://github.com/princesoni1989/angular-js-seed) and install dependency.
+You can clone repository [angular-js-seed](https://github.com/princesoni1989/angular-js-seed) and install dependency.
 
 ### Prerequisites
-We have number of server and build tools preconfigured in application, to use them you need to preinstall below dependency  
+We have number of server and build tools preconfigured in application, to use them you need to pre-install below dependency  
 * [Node](https://nodejs.org/en/download/)
 * [Sass](http://sass-lang.com/install) 
 * [Grunt](http://gruntjs.com/installing-grunt)
@@ -73,6 +73,7 @@ This app comes with preconfigured configuration. You can find below listed funct
 * change password
 * home screen
 * pop up management(Modal)
+* loader service
 * constants
 * configuration
 * server
@@ -184,7 +185,7 @@ tests when you push to GitHub.
 You will need to enable the integration between Travis and GitHub. See the Travis website for more
 instruction on how to do this.
 
-
+### Initial structure of this project is based on angular-fullstack generator.
 
 ## Contact
 

@@ -9,7 +9,7 @@
       // Add authorization token to headers
       request: function(config) {
         config.headers = config.headers || {};
-        if ($cookies.get('token')) {
+        if ($cookies && $cookies.get('token')) {
           config.headers.Authorization = 'Bearer ' + JSON.parse($cookies.get('token'));
         }
         return config;

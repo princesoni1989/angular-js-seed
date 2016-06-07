@@ -2,9 +2,9 @@
 (function (angular) {
 
 
-  function Auth($location, $rootScope, $http, User, $cookieStore, $q, Config) {
+  function Auth($http, User, $cookieStore, $q, Config) {
     var currentUser = {};
-    var token = $cookieStore.get('token');
+    var token = $cookieStore && $cookieStore.get('token');
     if (token) {
       currentUser = User.get();
     }
