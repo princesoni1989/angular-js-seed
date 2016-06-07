@@ -84,9 +84,11 @@ This app comes with preconfigured configuration. You can find below listed funct
 
 
 ## Directory Layout
-![](screen133.png)
+![](https://cloud.githubusercontent.com/assets/10917279/15777703/09eba91e-29af-11e6-8bda-c7c3e93492cc.png)
 
-![](screen233.png)
+![](https://cloud.githubusercontent.com/assets/10917279/15777710/11128ad2-29af-11e6-8e66-c242d065e966.png)
+
+
 ## Testing
 
 There are two kinds of tests in the angular-seed application: Unit tests and End to End tests.
