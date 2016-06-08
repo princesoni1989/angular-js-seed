@@ -15,6 +15,23 @@
     "test": "grunt test:client",
     "postinstall": "bower install"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/princesoni1989/angular-js-seed.git"
+  },
+  "keywords": [
+    "angular",
+    "angular seed",
+    "angular-js-seed",
+    "angularjs",
+    "angularseed",
+    "seed"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/princesoni1989/angular-js-seed/issues"
+  },
+  "homepage": "https://github.com/princesoni1989/angular-js-seed#readme",
   "devDependencies": {
     "connect-livereload": "~0.4.0",
     "grunt": "~0.4.4",
