@@ -1,7 +1,7 @@
 {
   "name": "angular-js-seed",
   "description": "Seed project for angular js application",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "server/app.js",
   "dependencies": {
     "express": "~4.9.0",
@@ -13,8 +13,7 @@
   },
   "scripts": {
     "start": "node server/app.js",
-    "test": "grunt test:client",
-    "postinstall": "bower install"
+    "test": "grunt test:client"
   },
   "repository": {
     "type": "git",

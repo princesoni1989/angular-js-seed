@@ -40,13 +40,13 @@ npm install angular-js-seed
 We have two kinds of dependencies in this project: tools and angular framework code.  The tools help
 us manage and test the application.
 
-We have preconfigured `npm` to automatically run `bower`. so we can simply do:
-
 ```
+bower install
+
 npm install
 ```
 
-It will automatically call `bower install`.  You should find that you have two new
+You should find that you have two new
 folders in your project.
 
 * `node_modules` - contains the npm packages for the tools we need
