@@ -8,6 +8,121 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
  * App-wide Styles
  */
 
+/* navbar */
+#nav-main
+{
+  background-color: #2c3e50;
+  margin-bottom: 0;
+  border:none;
+}
+#nav-main a.navbar-brand
+{
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+#nav-main li a
+{
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  &:focus
+  {
+    background: transparent;
+    color:#18bc9c;
+  }
+  &:hover
+  {
+    background: transparent;
+    color:#18bc9c;
+  }
+}
+#nav-main li.active a
+{
+  background: #18bc9c;
+  color: #fff;
+}
+.navbar-nav .admin-welcome
+{
+  color: #18bc9c;
+}
+/* navbar */
+
+/* body */
+.jumbotron.jumbo-main
+{
+  text-align: center;
+  h1
+  {
+    text-align: center;
+    color: #2c3e50;
+    text-transform: uppercase;
+  }
+}
+/* body */
+
+/* Login Form */
+
+.login-form
+{
+  border: 1px solid #ddd;
+  padding: 20px 20px 40px 20px;
+  margin-top: 50px;
+  background: #f5f5f5;
+  h2
+  {
+    text-align: center;
+    font-size: 20px;
+  }
+  .btn-login,.btn-register,.btn-danger,.btn-success
+  {
+    display: block;
+    width: 100%;
+    background-color: #47a447;
+    border-color: #398439;
+    color: #fff;
+    border-radius: 0;
+    height: 35px;
+    line-height: 35px;
+    padding: 0;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  .btn-register
+  {
+    background-color: #428bca;
+    border-color: #357ebd;
+  }
+  .forgot-password {
+    margin-top: 8px;
+    display: block;
+  }
+  .btn-danger
+  {
+    background-color: #d9534f;
+    border-color: #d43f3a;
+  }
+}
+/* Login Form */
+/* footer */
+footer
+{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #233140;
+  h3
+  {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    line-height: 60px;
+  }
+}
+/* footer */
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;

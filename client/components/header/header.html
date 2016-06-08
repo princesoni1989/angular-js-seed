@@ -1,4 +1,4 @@
-<div class="navbar navbar-default navbar-static-top" ng-controller="HeaderCtrl as Header">
+<div class="navbar navbar-default navbar-static-top" id="nav-main" ng-controller="HeaderCtrl as Header">
   <div class="container">
     <div class="navbar-header">
       <button class="navbar-toggle" type="button" ng-click="isCollapsed = !isCollapsed">
@@ -14,8 +14,8 @@
       <ul class="nav navbar-nav navbar-right">
         <li ng-hide="Header.isLoggedIn()" ui-sref-active="active"><a ui-sref="signUp">Sign up</a></li>
         <li ng-hide="Header.isLoggedIn()" ui-sref-active="active"><a ui-sref="login">Login</a></li>
+        <li ng-show="Header.isLoggedIn()"><p class="navbar-text admin-welcome">Hello,{{ Header.getCurrentUser().name }}</p> </li>
         <li ng-show="Header.isLoggedIn()" ui-sref-active="active"><a ui-sref="changePassword">Change Password</a></li>
-        <li ng-show="Header.isLoggedIn()"><p class="navbar-text">Hello {{ Header.getCurrentUser().name }}</p> </li>
         <li ng-show="Header.isLoggedIn()"><a ui-sref="logout">Logout</a></li>
       </ul>
     </div>

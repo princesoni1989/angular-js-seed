@@ -2,12 +2,9 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-12">
-      <h1>Login</h1>
-    </div>
-    <div class="col-sm-12">
-      <form class="form" name="form" ng-submit="Login.login(form)" novalidate>
-
+    <div class="col-md-4 col-md-offset-4">
+      <form class="form login-form" name="form" ng-submit="Login.login(form)" novalidate>
+        <h2>Please Sign In</h2>
         <div class="form-group">
           <label>Email</label>
 
@@ -38,14 +35,11 @@
           <a class="btn btn-default btn-lg btn-register" ui-sref="signUp">
             Register
           </a>
-          <a class="btn btn-default btn-lg btn-register" ui-sref="forgotPassword">
+          <a class="forgot-password" ui-sref="forgotPassword">
             Forgot Password
           </a>
         </div>
-
-
       </form>
     </div>
   </div>
-  <hr>
 </div>
