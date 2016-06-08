@@ -33,6 +33,8 @@ cd angular-js-seed
 ```
 npm install angular-js-seed
 
+```
+
 ### Install Dependencies
 
 We have two kinds of dependencies in this project: tools and angular framework code.  The tools help
